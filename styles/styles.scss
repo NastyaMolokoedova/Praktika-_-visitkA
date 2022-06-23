@@ -240,20 +240,13 @@ section{
 .control1{
    position: fixed;
     z-index: 10;
-    top: 50%;
-    left: 10%;
+    top: 80%;
+    left: 11%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    transform: translateX(-50%);
-    .active-btn{
-        background-color: var(--color-secondary) !important;
-        transition: all .4s easy-in-out;
-        i{
-            color: var(--color-white) !important;
-        }
-    }
+    transform: translateY(-50%);
     .icon-contact1{
         padding: 1rem;
         cursor: pointer;
