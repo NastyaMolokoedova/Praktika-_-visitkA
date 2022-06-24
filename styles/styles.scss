@@ -146,7 +146,38 @@ section{
         position: relative;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+    .contact-icon{
+        display: flex;
+        align-items: center;
+
+        a{
+            display: flex;
+            align-items: center;
+            color: var(--color-grey-2);
+            background-color: var(--color-grey-4);
+            cursor: pointer;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            margin: 0 .4rem;
+            transition: all .4s ease-in-out;
+            &:hover{
+                background-color: var(--color-secondary);
+                i{
+                    color: var(--color-grey-2);
+                }
+            }
+            i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.3rem;
+            }
+        }
     }
+}
 }
 .right-header{
     display: flex;
@@ -167,7 +198,7 @@ section{
     }
     align-items: center;
     justify-content: center;
-}
+
 
 
 /*Indeppendent components*/
@@ -181,7 +212,6 @@ section{
     font-weight: 600;
     position: relative;
     border: 1px solid var(--color-grey-4);
-    align-self: flex-start;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -199,8 +229,6 @@ section{
     &::before{
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
         transform: translateX(100%);
         transition: all .9s ease-in-out;
         z-index: -1;
@@ -216,21 +244,16 @@ section{
             transform: translateX(0);
             z-index: -1;
             transition: all .9s ease-in-out;
-            
         }
     }
-    &::after{
-        content: '';
+    /*&::after{
+        content: ' ';
         position: absolute;
-        top: 0;
-        right: 0;
         transform: translateX(0);
-        transition: all .9s ease-in-out;
         z-index: -1;
         border-radius: 30px;
     }
     &:hover{
-        transition: all .9s ease-in-out;
         &::after{
             width: 100%;
             height: 100%;
@@ -241,9 +264,9 @@ section{
             transition: all .9s ease-in-out;
             
         }
-    }
+    }*/
 }
-
+}
 .main-title{
     text-align: center;
     h2{
@@ -268,7 +291,7 @@ section{
     }
 }
 
-.control1{
+/*.control1{
     position: fixed;
     z-index: 10;
     top: 80%;
@@ -297,4 +320,4 @@ section{
         }
     }
 
-}
+}*/
