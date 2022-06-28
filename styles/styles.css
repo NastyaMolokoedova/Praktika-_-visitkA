@@ -381,9 +381,8 @@ section {
   padding-right: 5rem;
 }
 .about-container .left-about p {
-  line-height: 1rem;
-  padding: auto;
-  color: var(--color-grey-1);
+  margin: 1.5rem 0;
+  line-height: 2rem;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -507,6 +506,7 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
