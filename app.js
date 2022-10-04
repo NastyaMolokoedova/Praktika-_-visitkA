@@ -5,7 +5,7 @@ const allSections = document.querySelector('.main-content');
 
 
 function PageTransitions(){
-    //Button click active class
+    //для активной кнопка сбоку
     for(let i = 0; i < sectBtn.length; i++){
         sectBtn[i].addEventListener('click', function(){
             let currentBtn = document.querySelectorAll('.active-btn');
@@ -14,7 +14,7 @@ function PageTransitions(){
         })
     }
 
-    //Sections active class
+    //возможность переключаться между страницами
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
         if(id){
@@ -24,7 +24,7 @@ function PageTransitions(){
             })
             e.target.classList.add('active')
 
-            //hide other sections
+            //скрыть остльные секции страницы
             sections.forEach((section)=>{
                 section.classList.remove('active')
             })
